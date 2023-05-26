@@ -1,0 +1,55 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.formInputWrapper {
+  display: flex;
+  margin-top: 0.4rem;
+  margin-bottom: 0.4rem;
+}
+
+.formLabel {
+  width: 5.4rem;
+}
+
+.formInput {
+  flex-grow: 1;
+}
+
+.TodoForm {
+  width: calc(100% - 0.4rem);
+  max-width: 600px;
+}
+
+.TodoList {
+  width: calc(100% - 0.4rem);
+  max-width: 600px;
+  flex-grow: 1;
+}
+
+.Todo-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2rem 1.4rem 1.4rem auto;
+}
+
+.Todo-mainSection {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 2rem;
+  background-color: #eee;
+}
+
+.Todo-label {
+  flex-grow: 1;
+  font-size: 1rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
